@@ -1,0 +1,128 @@
+
+/* Mobile Responsive */
+
+@media screen and (max-width:900px) {
+
+    .close i{
+        font-size: 2rem;
+        width: 35px;
+        height: 35px;
+    }
+
+    .close{
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        text-align: center;
+        border-radius: 50px;
+        background-color: transparent;
+        border: 2px solid black;
+    }
+
+    .open i{
+        font-size: 2rem;
+        width: 35px;
+        height: 35px;
+        /* color: white; */
+    }
+
+    .open{
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        text-align: center;
+        border: none;
+        background-color: transparent;
+    }
+
+    .nav-menu{
+        /* display: block; */
+        background: linear-gradient(45deg, #FFFFFF, #8B4513);
+        position: fixed;
+        top: 0;
+        left: -60%;
+        width: 60%;
+        height: 100%;
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        transition: left 0.3s;
+    }
+
+    body.show-menu .nav-menu{
+        left: 0;
+    }
+
+    .nav-link{
+        color: black;
+        font-size: 1.2rem;
+        font-weight: 500;
+        display: block;
+    }
+
+    body.show-menu header::before{
+        content:"" ;
+        position: fixed;
+        left: 0;
+        top: 0;
+        backdrop-filter: blur(6px);
+        width: 100%;
+        height: 100%;
+    }
+
+    .section-content{
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .hero-image-wrapper{
+        margin-top: 70px;
+        width: 370px;
+    }
+
+    .sub-title, .description{
+        max-width: 100%;
+        text-align: center;
+    }
+    .buttons{
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    /* About Section */
+    .about-details{
+        width: 90%;
+    }
+
+    .menu{
+        flex-basis: 70%;
+    }
+    
+    /* Contact us  */
+
+    .section-contact{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 0px 20px;
+    }
+
+    .contact-form{
+        max-width: 100%;
+    }
+
+    .submit-button{
+        margin-left: 0px;
+    }
+
+    /* Footer part */
+    .footer-section{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
